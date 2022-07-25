@@ -1,0 +1,213 @@
+#menu {
+    position: absolute;
+    width: 8%;
+    left: 8%;
+    margin-top: 3%;
+    z-index: 3;
+    fill: none;
+    transition: 0.4s;
+    stroke-width: 3;
+    transition-timing-function: ease-out;
+}
+
+/*Compulsory Task 2 - Tables with customised formatting*/
+.tableStyle {
+    border-width: 2px;
+    border-style: solid;
+    width: 100%;
+}
+
+.tableItems {
+    border-width: 1px;
+    border-style: solid;
+    padding: 1%;
+}
+
+.Helvetica {
+    font-family: Helvetica;
+}
+
+/*Compulsory Task 2 - Background colour for all pages*/
+.pageColor {
+    background-color: rgb(189, 255, 203);
+    animation-name: rainbow;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+}
+
+/*Compulsory Task 2 - Animate background to change colours*/
+@keyframes rainbow {
+    0% {
+        background-color: rgb(189, 255, 203);
+    }
+
+    20% {
+        background-color: rgb(181, 224, 255)
+    }
+
+    40% {
+        background-color: rgb(231, 201, 252)
+    }
+
+    60% {
+        background-color: rgb(255, 189, 189)
+    }
+
+    80% {
+        background-color: rgb(255, 244, 189)
+    }
+
+    100% {
+        background-color: rgb(189, 255, 203)
+    }
+}
+
+#maintext {
+    margin-top: 17%;
+}
+
+#homepageimages {
+    margin-top: 17%;
+}
+
+:hover.pencilshake {
+    animation-name: shake;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    filter: saturate(150%)
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-0.5deg);
+    }
+
+    50% {
+        transform: rotate(0);
+    }
+
+    75% {
+        transform: rotate(0.5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+
+#pencil {
+    margin-top: 17%;
+    width: 50%
+}
+
+#contact {
+    background-image: url("images/contactbackground.svg");
+    background-size: 120%;
+}
+
+#footer {
+    background-image: url(images/footerbackground.svg)
+}
+
+#cart {
+    position: absolute;
+    width: 10%;
+    right: 2%;
+    margin-top: 4%;
+    z-index: 2;
+    fill: none;
+    transition: 0.4s;
+    stroke-width: 2;
+    transition-timing-function: ease-out;
+}
+
+#underbanner {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.navheading {
+    fill: #000000;
+    fill-opacity: 1;
+    stroke: #000000;
+    transition: 0.2s;
+}
+
+.sepia {
+    filter: sepia(50%)
+}
+
+:hover.navheading {
+    fill: white;
+    stroke: darkgray;
+}
+
+.item {
+    transition: 0.5s;
+}
+
+.item:hover {
+    transform: scale(1.1)
+        /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.pathmenu,
+.pathcart {
+    stroke: black;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-opacity: 1;
+}
+
+:hover.pathcart {
+    stroke-dasharray: 275;
+    stroke-dashoffset: 275;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: write;
+    animation-timing-function: ease;
+    stroke: white;
+}
+
+:hover.pathmenu {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-name: write;
+    animation-timing-function: ease;
+    stroke: white;
+}
+
+@keyframes write {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.addButton {
+    height:40px;
+    margin-right:0;
+    margin-left:auto;
+}
+#modalBody{
+    width:40vw;
+    z-index:3;
+}
+#modalBackground{
+    position:fixed;
+    height:100vh;
+    width:100vw;
+    background-color:rgba(88, 88, 88, 0.395);
+    z-index:2
+}
+.navbar{
+    z-index:1
+}
+
