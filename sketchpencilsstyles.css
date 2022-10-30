@@ -27,13 +27,13 @@
     font-family: Helvetica;
 }
 
-/*Compulsory Task 2 - Background colour for all pages*/
+/*Compulsory Task 2 - Background colour for all pages
 .pageColor {
     background-color: rgb(189, 255, 203);
     animation-name: rainbow;
     animation-duration: 100s;
     animation-iteration-count: infinite;
-}
+}*/
 
 /*Compulsory Task 2 - Animate background to change colours*/
 @keyframes rainbow {
